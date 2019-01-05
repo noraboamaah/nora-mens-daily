@@ -217,8 +217,9 @@
                 <h3 class="mb-5">Leave a comment</h3>
 
                            
-
-                <form class="dv-add-oneto:noramensdaily:comment" action="#" class="p-5 bg-light">
+                <div class="dv-notify-success" style="color: green">Person added</div>
+                <div class="dv-notify-failed" style="color: red">Failed to add person</div>
+                <form class="dv-add-oneto:replys:comment" action="#" class="p-5 bg-light">
                   <div class="form-group">
                     <label for="name">Name *</label>
                     <input type="text" class="form-control" id="name" name="name">
@@ -229,7 +230,7 @@
                   </div>
                   
                   <div class="form-group">
-                    <label for="message">Message</label>
+                    <label for="message">Comment</label>
                     <textarea name="comment" id="message" cols="30" rows="10" class="form-control"></textarea>
                   </div>
                   <div class="form-group">
@@ -492,6 +493,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     
     <script src="js/main.js"></script>
+
+    <script src="http://noramensdaily.herokuapp.com/js/devless-sdk.js" class="devless-connection" devless-con-token="bc20471e9b178b4a36011f2b23e99fbe"></script>
+
 
   
   </body>
